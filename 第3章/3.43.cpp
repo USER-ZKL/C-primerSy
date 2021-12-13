@@ -38,12 +38,7 @@ int main() {
 		}
 	}
 
-	//版本2 下标，使用类型别名
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 4; j++) {
-			cout << ia[i][j] << " ";
-		}
-	}
+
 
 	//版本3 指针，使用类型别名
 	for (int_array *r = begin(ia); r != end(ia); r++) {
@@ -59,12 +54,7 @@ int main() {
 		}
 	}
 
-	//版本2 下标使用auto
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 4; j++) {
-			cout << ia[i][j] << " ";
-		}
-	}
+
 
 	//版本3 指针使用auto
 	for (auto r = begin(ia); r != end(ia); r++) {
